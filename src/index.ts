@@ -2,7 +2,7 @@ import { EventEmitter } from 'events';
 
 import * as config from '../config/config.json';
 import { initAll } from '../lib/modules';
-import EventHandler from './Eventhandler';
+import EventHandler from './Eventhandler/Eventhandler';
 
 new EventHandler(new EventEmitter(), config.requestTimeout);
 

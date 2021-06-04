@@ -1,0 +1,5 @@
+{
+    "logLevel": "info",
+    "deviceLogLevel": "warning",
+    "requestTimeout": 1000
+}
