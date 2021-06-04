@@ -1,0 +1,23 @@
+{
+  "name": "smarthomekernel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "node ./bin/prebuild.js",
+    "build": "npm run build-ts",
+    "build-ts": "tsc --build tsconfig.json",
+    "clean": "rimraf ./dist",
+    "serve": "npm run clean && npm run build && node dist/index.js",
+    "start": "npm run serve",
+    "test": "jest",
+    "watch-ts": "tsc --watch",
+    "postinstall": "node ./bin/postinstall.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.0.27"
+  },
+  "dependencies": {}
+}
