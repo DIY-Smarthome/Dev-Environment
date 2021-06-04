@@ -1,0 +1,3 @@
+[submodule "src/eventhandler"]
+	path = src/eventhandler
+	url = https://github.com/diy-smarthome/eventhandler.git
