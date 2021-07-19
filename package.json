@@ -4,20 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "node ./bin/prebuild.js",
     "build": "npm run build-ts",
-    "build-ts": "tsc --build tsconfig.json",
+    "build-ts": "tsc --build tsconfig.json && cpx ./lib/modules.js ./dist/lib",
     "clean": "rimraf ./dist",
-    "serve": "npm run clean && npm run build && node dist/index.js",
+    "serve": "npm run clean && npm run build && node dist/kernel/index.js",
     "start": "npm run serve",
-    "test": "jest",
-    "watch-ts": "tsc --watch",
-    "postinstall": "node ./bin/postinstall.js"
+    "watch-ts": "tsc --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^14.0.27"
+    "@types/mqtt": "^2.5.0",
+    "@types/node": "^14.17.5",
+    "cpx": "^1.5.0",
+    "rimraf": "^3.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
 }
