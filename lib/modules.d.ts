@@ -1,3 +1,1 @@
-import Eventhandler from './Eventhandler';
-
-export function initAll(eventHandler: Eventhandler): Promise<void>;
+export function initAll(): Promise<void>;

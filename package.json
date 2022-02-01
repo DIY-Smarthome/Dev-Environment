@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build-ts",
-    "build-ts": "tsc --build tsconfig.json && cpx ./lib/modules.js ./dist/lib",
+    "build-ts": "tsc --build tsconfig.json && cpx ./lib/modules.js ./dist/lib && gulp",
     "clean": "rimraf ./dist",
+    "gulp": "gulp",
     "serve": "npm run clean && npm run build && node dist/kernel/index.js",
     "start": "npm run serve",
     "watch-ts": "tsc --watch"
@@ -17,6 +18,8 @@
     "@types/mqtt": "^2.5.0",
     "@types/node": "^14.17.5",
     "cpx": "^1.5.0",
+    "gulp": "^4.0.2",
+    "gulp-install": "^1.1.0",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
