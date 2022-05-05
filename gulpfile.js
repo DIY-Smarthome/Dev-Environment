@@ -8,7 +8,7 @@ gulp.task('default', function () {
 		.pipe(install({
 			node: "--production"
 		}));
-	return gulp.src(['./lib/*/package.json'])
+	return gulp.src(['./lib/*/package.json', './lib/*/config.json'])
 		.pipe(gulp.dest('./dist/lib/'))
 		.pipe(install({
 			node: "--production"

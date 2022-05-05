@@ -20,7 +20,8 @@
     "cpx": "^1.5.0",
     "gulp": "^4.0.2",
     "gulp-install": "^1.1.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "load-json-file": "^6.2.0"
   },
   "dependencies": {
     "typescript": "^4.3.5"
