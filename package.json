@@ -8,6 +8,7 @@
     "build-ts": "tsc --build tsconfig.json && cpx ./lib/modules.js ./dist/lib && gulp",
     "clean": "rimraf ./dist",
     "gulp": "gulp",
+    "gulp-dev": "gulp save-dev",
     "serve": "npm run clean && npm run build && node dist/kernel/index.js",
     "start": "npm run serve",
     "watch-ts": "tsc --watch"
