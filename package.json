@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build-ts",
-    "build-ts": "tsc --build tsconfig.json && cpx ./lib/modules.js ./dist/lib && gulp",
+    "build-ts": "gulp && tsc --build tsconfig.json && cpx ./lib/modules.js ./dist/lib",
     "clean": "rimraf ./dist",
     "gulp": "gulp",
     "gulp-dev": "gulp save-dev",
